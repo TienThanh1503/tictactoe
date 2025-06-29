@@ -63,7 +63,7 @@ class BoardWidget(GridLayout):
     def reset(self, board):
         for (i, j), cell in self._cells.items(): 
             if board.is_obstacle(i, j): 
-                cell.mark = '#' 
+                cell.set_mark('#')
             # hiện obstacle.png 
                 cell.disabled = True 
             else: 
